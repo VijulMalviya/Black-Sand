@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+   background-image: url('bg.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+nav{
+    width: 100%;
+    height: 15%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav p{
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+nav p:hover {
+    font-size: 24px;
+}
+nav p span{
+    font-weight: 900;
+}
+
+
+
+main{
+    width: 100%;
+    height: 85%;
+    background-color: transparent;
+}
+.text{
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    transform: translate(-65%,-35%);
+    width: 40%;
+    height: auto;
+    background-color: transparent;
+}
+.text h2 , h1{
+   text-transform: uppercase;
+   color: rgb(228, 224, 224);
+   
+}
+.text h1{
+    font-size: 4.5rem;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+.text h2{
+    font-size: 1rem;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.social{
+    position: absolute;
+    top: 90%;
+    left: 87%;
+    transform: translate(-13%,-10%);
+    /* width: 10%; */
+    height: auto;
+}
+.social i{
+     color: white;
+     font-size: 1rem;
+     padding: 15px;
+ }
+ .leftsidebar{
+     position: absolute;
+     top: 49%;
+     left: 9%;
+     transform: translate(-91%,-51%);
+     width: 0.2%;
+     height: 15%;
+     border-radius: 50px;
+     background-color: white;
+     
+     animation: leftsidebar 2s infinite alternate-reverse ease-in-out;
+ }
+ .scroll-down{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    width: 1.5%;
+    height: 5%;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding:3px;
+    display: flex;
+    justify-content: center;
+    
+}
+.scroll-down .scroll-ball{
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 0%;
+    animation: scrollball 2s infinite alternate-reverse ease-in-out;
+}
+@keyframes scrollball{
+    from{
+           margin-top: 0%;
+    }
+    to{
+        margin-top: 80%;
+    }
+}
+ @keyframes leftsidebar{
+    from{
+           height: 15%;
+    }
+    to{
+      height: 20%;
+    }
+} 
+
+
+
+
+
+@media only screen and (min-width:320px) and (max-width: 767px ){
+    .bg{
+       background-image: url('bg-small.png');
+       
+    }
+    
+    .social{
+        display: none;
+    }
+    .leftsidebar{
+        top: 60%;
+        transform: translate(-91%,-40%);
+    }  
+    .text{
+        
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-25%);
+        width: 80%;
+        
+    } 
+    .text h1{
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+        font-weight: 900;
+    }
+    .text h2{
+        font-size: 0.5rem;
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
+    .scroll-down{
+
+        width: 5%;
+        height: 4%;
+        border-radius: 50px;
+        border: 1px solid white;
+        
+        
+    }
+}
+@media only screen and (min-width:768px) and (max-width: 1024px ){
+    .bg{
+       background-image: url('bg.jpg');
+       
+    }
+    nav{
+        height: 10%;
+    }
+    main{
+        height: 90%;
+    }
+    .social{
+        display: none;
+    }
+    .leftsidebar{
+        top: 59%;
+        transform: translate(-91%,-51%);
+    }  
+    .text{
+        
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-25%);
+        width: 80%;
+        
+    } 
+    .text h1{
+        font-size: 3.8rem;
+        letter-spacing: 5px;
+        font-weight: 900;
+    }
+    .text h2{
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+        font-weight: 700;
+    }
+    .scroll-down{
+
+        width: 3%;
+        height: 4%;
+        border-radius: 50px;
+        border: 1px solid white;
+        
+        
+    }
+}
+@media only screen and (min-width:1024px) and (max-width: 1280px ){
+    .bg{
+       background-image: url('bg.jpg');
+       
+    }
+    nav{
+        height: 10%;
+    }
+    main{
+        height: 90%;
+    }
+    .social{
+        display: none;
+    }
+    .leftsidebar{
+        top: 59%;
+        transform: translate(-91%,-51%);
+    }  
+    .text{
+        
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-25%);
+        width: 80%;
+        
+    } 
+    .text h1{
+        font-size: 3.8rem;
+        letter-spacing: 5px;
+        font-weight: 900;
+    }
+    .text h2{
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+        font-weight: 700;
+    }
+    .scroll-down{
+
+        width: 2%;
+        height: 4%;
+        border-radius: 50px;
+        border: 1px solid white;
+        
+        
+    }
+}
